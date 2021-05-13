@@ -42,7 +42,7 @@ class Insta:
                 session.follow_user_followers(['louis118712'], amount=150, sleep_delay=30, randomize=False, interact=False)
 
 
-                #choose publication by tags 
+                #choose publication by tags
                 session.like_by_tags(
                     ["programming", "developer", "javascript", "computerscience", "linux",
                      "codinglife", "softwareengineer", "programminglife"],
@@ -50,6 +50,7 @@ class Insta:
                 )
 
                 session.set_do_follow(enabled=True, percentage=60)
+                session.set_do_like(True, percentage=100)
 
                 session.set_do_comment(enabled=True, percentage=50)
                 #set comments
@@ -62,5 +63,4 @@ class Insta:
                     media='Photo'
 
                 )
-
 

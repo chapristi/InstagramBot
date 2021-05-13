@@ -38,7 +38,7 @@ class Insta:
                                              peak_unfollows_daily=402,
                                              peak_server_calls_hourly=None,
                                              peak_server_calls_daily=8000)
-                session.follow_user_followers(['louis118712'], amount=150, sleep_delay=30, randomize=False, interact=False)
+                session.follow_user_followers(['ttvchapristi'], amount=150, sleep_delay=30, randomize=False, interact=False)
 
 
                 #choose publication by tags

@@ -7,7 +7,6 @@ class Insta:
         self.username = username
 
     def instagram_action(self):
-
             session = InstaPy(username=self.username,
                               password=self.password,
                               headless_browser=False)
@@ -51,7 +50,6 @@ class Insta:
 
                 session.set_do_follow(enabled=True, percentage=60)
                 session.set_do_like(True, percentage=100)
-
                 session.set_do_comment(enabled=True, percentage=50)
                 #set comments
                 session.set_comments(

@@ -13,9 +13,9 @@ class Insta:
                               headless_browser=False)
 
             with smart_run(session):
-                """ Activity flow """
                 # general settings
                 print("connexion reussite")
+                # first params
                 session.set_relationship_bounds(enabled=True,
                                                 delimit_by_numbers=True,
                                                 max_followers=4590,
@@ -41,19 +41,18 @@ class Insta:
                                              peak_server_calls_daily=8000)
                 session.follow_user_followers(['louis118712'], amount=150, sleep_delay=30, randomize=False, interact=False)
 
-                """ First step of Unfollow action - Unfollow not follower users...
-                       """
 
-
+                #choose publication by tags 
                 session.like_by_tags(
-                    ["natgeo", "bird", "programming", "developer", "javascript", "computerscience", "linux",
+                    ["programming", "developer", "javascript", "computerscience", "linux",
                      "codinglife", "softwareengineer", "programminglife"],
                     amount=100
                 )
 
-                session.set_do_follow(enabled=True, percentage=60, times=2)
+                session.set_do_follow(enabled=True, percentage=60)
 
                 session.set_do_comment(enabled=True, percentage=50)
+                #set comments
                 session.set_comments(
 
                     ['Nice!', 'Sweet!', 'Beautiful :heart_eyes:', 'i love it :heart:', 'Nice shot! @{}', 'Awesome! @{}',
@@ -63,4 +62,5 @@ class Insta:
                     media='Photo'
 
                 )
+
 

@@ -12,9 +12,9 @@ class Insta:
                               headless_browser=False)
 
             with smart_run(session):
-                # general settings
+                # general settings!
                 print("connexion reussite")
-                # first params
+                # first params!
                 while True:
                     session.set_relationship_bounds(enabled=True,
                                                     delimit_by_numbers=True,
@@ -42,7 +42,7 @@ class Insta:
                     session.follow_user_followers(['abonne_toi_je_rend_._._'], amount=2000, sleep_delay=10, randomize=False, interact=False)
 
 
-                    #choose publication by tags
+                    #choose publication by tags!
                     session.like_by_tags(
                         ["programming", "developer", "javascript", "computerscience", "linux",
                          "codinglife", "softwareengineer", "programminglife"],
@@ -52,7 +52,7 @@ class Insta:
                     session.set_do_follow(enabled=True, percentage=60)
                     session.set_do_like(True, percentage=100)
                     session.set_do_comment(enabled=True, percentage=50)
-                    #set comments
+                    #set comments!
                     session.set_comments(
 
                         ['Nice!', 'Sweet!', 'Beautiful :heart_eyes:', 'i love it :heart:', 'Nice shot! @{}', 'Awesome! @{}',
